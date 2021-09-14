@@ -1,0 +1,67 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  width: 500px;
+  margin: 0 auto 40px;
+  border-radius: 18px;
+  box-shadow: 0 11.4324px 26.6757px hsl(0deg 0% 44% / 45%);
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 14px;
+  background: #f2f2f2;
+  border-radius: 9px;
+  max-width: 550px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.inputItem {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.inputItem > div {
+  text-align: left;
+  margin: 0 5px;
+  padding: 5px 0;
+  line-height: 18px;
+}
+
+.calculatorTable {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  padding: 4px;
+}
+
+.tableRow {
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 4px;
+  width: 100%;
+  text-align: left;
+  padding: 4px 0;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+/* .tableRow:nth-child(1) {
+  background-color: #c7c7c7;
+} */
+
+/* .tableRow {
+  display: flex;
+  justify-content: space-between;
+} */
